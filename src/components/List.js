@@ -1,5 +1,5 @@
-const List = ({items}) => {
-  return <ul>{items.map(v => <li>{v}</li>)}</ul>
+function List({ items }) {
+  return <ul>{items.map((v) => <li>{v}</li>)}</ul>
 }
 
 export default List

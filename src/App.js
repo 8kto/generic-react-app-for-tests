@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          Test app
+        Test app
       </header>
-      <List  items={['Test 1', 'Test 2']} />
+      <List items={['Test 1', 'Test 2']} />
     </div>
   );
 }

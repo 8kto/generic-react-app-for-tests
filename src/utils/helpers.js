@@ -1,3 +1,1 @@
-export const isOdd = (num) => {
-  return Boolean(num % 2)
-}
+export const isOdd = (num) => Boolean(num % 2)
