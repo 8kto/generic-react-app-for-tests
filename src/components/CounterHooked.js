@@ -10,7 +10,7 @@ function CounterHooked() {
   const dispatch = useDispatch()
 
   return (
-    <div className="counter">
+    <div className="component counter">
       <strong>Counter hooked</strong>
       :
       {' '}

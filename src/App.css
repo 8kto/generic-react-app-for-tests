@@ -27,3 +27,9 @@ button{
 .App-link {
   color: #61dafb;
 }
+
+.component {
+  background: #efefef;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}

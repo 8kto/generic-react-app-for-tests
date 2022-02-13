@@ -7,7 +7,7 @@ import { decrement, increment } from '../features/counter/counterSlice'
  */
 function CounterConnected({ counter, dispatch }) {
   return (
-    <div className="counter">
+    <div className="component counter">
       <strong>Counter connected</strong>
       :
       {' '}
