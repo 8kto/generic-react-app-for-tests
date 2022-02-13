@@ -1,6 +1,7 @@
 import CounterConnected from './components/CounterConnected'
 import CounterHooked from './components/CounterHooked'
 import List from './components/List'
+import UsersList from './components/UsersList'
 
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
       <CounterConnected />
 
       <h2>Components</h2>
+      <UsersList />
       <List items={['Test 1', 'Test 2']} />
     </div>
   );
