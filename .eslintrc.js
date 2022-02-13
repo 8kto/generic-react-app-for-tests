@@ -26,6 +26,7 @@ module.exports = {
     'react/prop-types': ['warn'],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'newline-before-return': 'error',
   },
   overrides: [
     {
