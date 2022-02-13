@@ -1,24 +1,6 @@
 body {
   padding: 3rem 25%;
-  background-color: lightblue;
-}
-
-.App {
-  text-align: left;
-}
-
-.App-header {
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  background-color: #eeffeb;
 }
 
 button{
@@ -26,5 +8,22 @@ button{
   background: cadetblue;
   outline: none;
   border: darkcyan;
-  margin: 0.5rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.App {
+  text-align: left;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #333;
+}
+
+.App-link {
+  color: #61dafb;
 }
