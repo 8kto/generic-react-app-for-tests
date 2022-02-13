@@ -1,35 +1,3 @@
 body {
-  padding: 3rem 25%;
-  background-color: #eeffeb;
-}
-
-button{
-  padding: 1rem;
   background: cadetblue;
-  outline: none;
-  border: darkcyan;
-  margin: 0 0.5rem 0 0;
-}
-
-.App {
-  text-align: left;
-}
-
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  color: #333;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.component {
-  background: #efefef;
-  padding: 1rem;
-  margin-bottom: 1rem;
 }
