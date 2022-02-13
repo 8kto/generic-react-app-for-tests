@@ -13,8 +13,8 @@ function Counter() {
       {' '}
       {state.value}
       <p>
-        <button type="button" onClick={() => dispatch(increment(1))}>Increment</button>
-        <button type="button" onClick={() => dispatch(decrement(1))}>Decrement</button>
+        <button type="button" onClick={() => dispatch(increment())}>Increment</button>
+        <button type="button" onClick={() => dispatch(decrement())}>Decrement</button>
       </p>
     </div>
   )
