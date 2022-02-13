@@ -1,3 +1,10 @@
+import {
+  Button,
+  ButtonGroup, Card,
+  CardActions,
+  CardContent, Grid,
+  Typography,
+} from '@mui/material'
 import { connect } from 'react-redux'
 
 import { decrement, increment } from '../features/counter/counterSlice'
@@ -7,16 +14,39 @@ import { decrement, increment } from '../features/counter/counterSlice'
  */
 function CounterConnected({ counter, dispatch }) {
   return (
-    <div className="component counter">
-      <strong>Counter connected</strong>
-      :
-      {' '}
-      {counter}
-      <p>
-        <button type="button" onClick={() => dispatch(decrement())}>Decrement</button>
-        <button type="button" onClick={() => dispatch(increment())}>Increment</button>
-      </p>
-    </div>
+    <Card sx={{ minWidth: 275, marginBottom: '2rem' }}>
+      <Grid container spacing={2}>
+        <Grid item sm={4} xs={12} alignSelf="center">
+          <CardContent>
+            <Typography variant="h5" component="div">
+              Counter connected
+            </Typography>
+            <Typography variant="body2">
+              <strong>Counter</strong>
+              :
+              {' '}
+              {counter}
+            </Typography>
+          </CardContent>
+        </Grid>
+        <Grid item sm={8} xs={12} alignSelf="center">
+          <CardActions>
+            <ButtonGroup variant="contained" aria-label="outlined primary button group">
+              <Button
+                onClick={() => dispatch(decrement())}
+              >
+                Decrement
+              </Button>
+              <Button
+                onClick={() => dispatch(increment())}
+              >
+                Increment
+              </Button>
+            </ButtonGroup>
+          </CardActions>
+        </Grid>
+      </Grid>
+    </Card>
   )
 }
 

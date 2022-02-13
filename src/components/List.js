@@ -1,9 +1,17 @@
+import { Card, CardContent, Typography } from '@mui/material'
+
 function List({ items }) {
   return (
-    <div className="component">
-      <strong>A simple list</strong>
-      <ul>{items.map((v) => <li key={v}>{v}</li>)}</ul>
-    </div>
+    <Card sx={{ minWidth: 275, marginBottom: '2rem' }}>
+      <CardContent>
+        <Typography variant="h5" component="div">
+          A simple list
+        </Typography>
+        <Typography variant="body2">
+          <ul>{items.map((v) => <li key={v}>{v}</li>)}</ul>
+        </Typography>
+      </CardContent>
+    </Card>
   )
 }
 
