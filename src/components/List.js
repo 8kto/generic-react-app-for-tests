@@ -7,7 +7,7 @@ function List({ items }) {
         <Typography variant="h5" component="div">
           A simple list
         </Typography>
-        <Typography variant="body2">
+        <Typography variant="body2" component="div">
           <ul>{items.map((v) => <li key={v}>{v}</li>)}</ul>
         </Typography>
       </CardContent>

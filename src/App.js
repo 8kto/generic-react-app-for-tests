@@ -1,7 +1,9 @@
 import {
   AppBar,
-  Container, createTheme,
-  CssBaseline, ThemeProvider,
+  Container,
+  createTheme,
+  CssBaseline,
+  ThemeProvider,
   Toolbar,
   Typography,
 } from '@mui/material'
