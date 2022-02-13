@@ -1,3 +1,4 @@
+import Counter from './components/Counter'
 import List from './components/List'
 
 import './App.css';
@@ -8,6 +9,7 @@ function App() {
       <header className="App-header">
         Test app
       </header>
+      <Counter />
       <List items={['Test 1', 'Test 2']} />
     </div>
   );

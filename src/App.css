@@ -1,9 +1,13 @@
+body {
+  padding: 3rem 25%;
+  background-color: lightblue;
+}
+
 .App {
   text-align: left;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -15,4 +19,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+button{
+  padding: 1rem;
+  background: cadetblue;
+  outline: none;
+  border: darkcyan;
+  margin: 0.5rem;
 }
