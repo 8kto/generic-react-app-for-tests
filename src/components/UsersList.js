@@ -46,7 +46,11 @@ function UsersList() {
           Thunks
         </Typography>
         <Typography variant="body2" component="div">
-          <DataGrid autoHeight rows={items} columns={columns} />
+          <DataGrid
+            autoHeight
+            rows={items}
+            columns={columns}
+          />
         </Typography>
       </CardContent>
       <CardActions>
