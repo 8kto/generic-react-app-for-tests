@@ -1,17 +1,17 @@
 import {
   AppBar,
-  Container,
+  Box,
   createTheme,
   CssBaseline,
   ThemeProvider,
   Toolbar,
-  Typography,
 } from '@mui/material'
+import {
+  BrowserRouter as Router, Link, Route, Routes,
+} from 'react-router-dom'
 
-import CounterConnected from './components/CounterConnected'
-import CounterHooked from './components/CounterHooked'
-import List from './components/List'
-import UsersList from './components/UsersList'
+import IndexPage from './pages/Index'
+import MeetingFeedPage from './pages/MeetingFeed'
 
 import './App.css'
 
@@ -21,51 +21,47 @@ const themeCustom = createTheme({
       default: '#e4f0e2',
     },
   },
-});
+})
 
 function App() {
   return (
-    <ThemeProvider theme={themeCustom}>
-      <CssBaseline />
-      <AppBar
-        position="absolute"
-        color="default"
-        elevation={0}
-        sx={{
-          position: 'relative',
-          borderBottom: (t) => `1px solid ${t.palette.divider}`,
-        }}
-      >
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Test React app
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <Container maxWidth="md" sx={{ padding: '1rem' }}>
-        <Typography
-          component="h2"
-          variant="h5"
-          marginTop="1rem"
-          marginBottom="1rem"
+    <Router>
+      <ThemeProvider theme={themeCustom}>
+        <CssBaseline />
+        <AppBar
+          position="absolute"
+          color="default"
+          elevation={0}
+          sx={{
+            position: 'relative',
+            borderBottom: (t) => `1px solid ${t.palette.divider}`,
+          }}
         >
-          Redux
-        </Typography>
-        <CounterHooked />
-        <CounterConnected />
+          <Toolbar>
+            <Box
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                typography: 'body1',
+                '& > :not(style) + :not(style)': {
+                  ml: 2,
+                },
+              }}
+            >
+              <Link to="/">Home</Link>
+              <Link to="/meetings">Meetings</Link>
+            </Box>
+          </Toolbar>
+        </AppBar>
 
-        <Typography
-          component="h2"
-          variant="h5"
-          marginTop="1rem"
-          marginBottom="1rem"
-        >
-          Components
-        </Typography>
-        <UsersList />
-        <List items={['Test 1', 'Test 2']} />
-      </Container>
-    </ThemeProvider>
+        <Routes>
+          <Route path="/" element={<IndexPage />}>Test</Route>
+          <Route path="/meetings" element={<MeetingFeedPage />}>Test</Route>
+        </Routes>
+
+      </ThemeProvider>
+    </Router>
   )
 }
 
